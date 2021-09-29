@@ -1,0 +1,1234 @@
+AWSOME DAY ONLINE CONFERENCE 29/09/2021.
+
+Instrutora: Carolina Carneiro. Technical Trainer, AWS (https://br.linkedin.com/carneiro-carolina)
+
+TÓPICOS:
+
+    Boas-vindas
+    Introdução à AWS
+    Introdução aos Serviços da AWS
+    Inovação com a AWS
+    Encerramento: Resumo do curso
+
+-------
+
+
+Inovação com a AWS
+
+Internet das Coisas (IoT)
+
+Machine learning (ML)
+
+Blockchain
+
+AWS Ground Station
+
+AWS Wavelength
+
+Seção 1: Introdução à AWS
+
+
+Introdução à nuvem
+
+O que é nuvem?
+A computação na nuvem permite que você pare de se preocupar com a sua infraestrutura como hardware e, em vez disso, pensar nela (e usa-la) como software.
+
+Recursos Programáveis
+
+Habilidades Dinâmicas
+
+Pagamento Por Uso
+
+Seis vantagens da computação na nuvem
+
+Troque os custos fixos por custos variáveis
+
+Beneficie-se de enormes economias de escala
+
+Pare de adivinhar a capacidade
+
+Aumente a velocidade e agilidade
+
+Pare de gastar dinheiro com a execução e manutenção dos datacenters
+
+Torne-se global em minutos
+
+
+O que é a nuvem?
+
+LOCAL
+
+SERVIDORES / ARMAZENAMENTO / BANCO DE DADOS / APLICAÇÕES > REDE CORPORATIVA
+
+
+INTERNET >
+PROVEDOR DE SERVIÇOS NA NUVEM > SERVIDORES / SERVIDORES / ARMAZENAMENTO / BANCO DE DADOS / APLICAÇÕES
+
+
+Infraestrutura e serviços básicos da AWS
+
+
+SEGURANÇA
+Grupos de Segurança
+
+Firewalls, ACLs, Administradores
+
+
+REDE
+Elastic Load Balancing / Amazon VPC
+
+Roteador, Estrutura da Rede, Switch
+
+
+
+SERVIDORES
+AMI > Instâncias Amazon EC2
+
+Servidores no Local
+
+ARMAZENAMENTO E BANCO DE DADOS
+
+Amazon EBS / Amazon EFS / Amazon S3 / Amazon RDS
+
+DAS, SAN, NAS, RDMS
+
+Áreas Principais dos Serviços
+
+- Computação
+- Armazenamento
+- Banco de Dados
+- Redes
+- Segurança
+
+Rota 53 Amazon > Usuário > VPC           - Amazon S3
+			    Amazon EC2   - Amazon DynamoDB
+			    Amazon EBS
+			    
+Como funciona?
+
+
+A AWS possui e mantém o hardware conectado à rede.
+Você provisiona e usa o que precisa.
+
+
+Modelos de implementação na nuvem
+
+Local > Sua Aplicação
+
+Híbrido > Sua Aplicação
+
+Nuvem > Sua Aplicação
+
+
+Infraestrutura global da AWS
+
+Data Center
+Normalmente hospeda milhares de servidores
+
+
+Zona de Disponibilidade (AZ)
+Um ou mais data centers
+Projetado para isolamento de FALHAS.
+
+Região
+Cada Região da AWS é formada por duas ou mais AZs
+AWS têm 24 regiões em todo o mundo.
+
+Infraestrutura global da AWS : Regiões Atuais
+
+Escolha uma Região
+- Governança de Dados
+- Latência
+- Custo
+
+Infraestrutura de ponta
+- Amazon CloudFront (rede de distribuição de
+conteúdo)
+- AWS Outposts
+- Áreas Locais
+- AWS Wavelength
+
+Infraestrutura de Ponta da AWS
+MOVENDO A NUVEM PARA MAIS PERTO DO ENDPOINT
+
+
+AWS Outposts
+A infraestrutura e serviços da AWS no local
+Migração, aplicativos críticos locais, localização física dos dados
+Capacidade expansível no data center do cliente, colocação, localização no local
+
+
+
+AWS Local Zones
+A infraestrutura e serviços da AWS grandes metro centers
+
+Imigração, baixa latência, processamento de dados local
+
+Capacidade escalável em instalação gerenciada e operada pela AWS
+
+
+AWS Wavelength
+Infraestrutura e serviços da AWS em CSP 5G networks
+Latência ultra-baixa, processamento de dados local
+Capacidade escalável no data center CSP gerenciado e com suporte da AWS
+
+Três forams de interagir com a AWS
+
+AWS Management Console
+Interface gráfica fácil de usar
+
+AWS Command Line Interface (AWS CLI)
+Acesso aos serviços através de linhas de comando
+
+Software development kits (SDKs)
+Acesse os serviços com seu código
+
+---------------
+
+Computação
+
+Amazon Elastic Compute Cloud (Amazon EC2)
+
+Amazon EC2
+
+Capacidade de computação redimensionável
+Controle total dos seus recursos de computação
+
+Tempo reduzido necessário para obter e inicializar novas instâncias do servidor
+
+Máquinas Virtuais vs. servidores físicos
+
+Amazon EC2 pode resolver alguns problemas que são mais difíceis com um servidor local
+
+Quando se utiliza recursos descartáveis:
+Decisões baseadas em dados
+Interações Rápidas
+Livre para cometer erros
+
+Amazon EC2
+
+Amazon EC2 oferece preços por uso e uma ampla seleção de
+hardware e software
+
+Use o Amazon Machine Images (AMIs)
+- Adicionar ou encerrar instâncias conforme necessário
+- Pause e resuma suas instâncias
+
+Template para
+- Volumes armazenados
+- Permissões de Inicialização
+- Mapeamento de dispositivos de bloco
+
+Exemplos
+- Servidor de Aplicação
+- Servidor Web
+- Servidor de Banco de Dados
+- Servidor de Jogo
+- Servidor de E-mail
+- Servidor de mídia
+- Servidor de catálogo
+- Servidor de Arquivo
+
+
+Benefícios da Amazon EC2
+
+Elasticidade
+Controle
+Flexibilidade
+Integração
+Confiável
+Seguro
+Econômico
+Fácil
+
+Famílias e nomes das instâncias do Amazon EC2
+
+A escolha do tipo correto é muito importante para o uso eficiente das suas instâncias e redução de custos
+
+Família Custos  / Casos de Uso
+
+Propósito Geral
+e.x., A1, T3, T3a, T2, M6g, M5
+
+- Sites e aplicativos web de pouco tráfego
+- Bancos de dados de pequeno e médio porte
+
+Otimizadas para Computação
+e.x., C5, C5n, C4
+
+- Servidores web de alta performance
+- Codificação de vídeo
+
+Otimizadas para Memória
+e.x., R5, R5n, X1e, X1, z1d
+
+- Bancos de Dados de alta performance
+- Caches de memória distribuídos
+
+Otimizadas para Armazenamento
+e.x., I3, I3en, D2, H1
+
+- Armazenamento de dados
+- Aplicativos de log ou processamento de dados
+
+Computação Acelerada
+e.x., P3, P2, Inf1, G4, G3, F1
+
+- Visualizações 3D
+- Machine learning
+
+
+Precificação Amazon EC2
+
+Instâncias sob Demanda
+
+Instâncias Reservadas
+
+Savings Plans
+
+Instâncias Spot
+
+- Faturamento por segundo (somente Amazon Linux e Ubuntu)
+- Faturamento por hora (todos os demais sistemas operativos)
+
+Serviços não gerenciados vs. Serviços gerenciados
+
+
+Não gerenciado
+
+Você gerencia o dimensionamento, a tolerância a falhas e a disponibilidade
+
+Gerenciado
+
+Redimensionamento, tolerância a falhas e disponibilidade são normalmente incorporados
+ao serviço.
+
+O que é computaçao sem servidor?
+
+Desenvolvar e executar aplicativos e serviços sem gerenciar servidores
+
+Sem servidores para provisionar ou gerenciar
+
+Dimensionar de acordo com o uso
+
+Nunca pague por recursos ociosos
+
+Disponibilidade e tolerância a falhas integrados
+
+AWS Lambda
+
+- Serviço de computação totalmente gerenciado
+- Executa Código stateless
+- Suporta várias linguagens de programação
+- Executa seu código de acordo com uma programação ou em resposta à eventos (por exemplo, alterações de dados em um bucket do Amazon S3 ou tabela do Amazon DynamoDB)
+
+Exemplo Lambda : Criando thumbnails
+
+Usuário
+
+1- Usuário faz o upload de uma imagem em tamanho original
+2- Amazon S3 envia um evento para uma função Lambda quando o objeto é criado
+3- A função Lambda redimensiona a imagem e faz o upload do thumbnail no bucket alvo
+
+Casos de Uso para aplicação Sem Servidor
+
+Aplicações Web
+
+- Websites estáticos
+- Aplicativos web complexos
+- Pacotes para Flask e Express
+
+Backends
+- Aplicações e serviços
+- Mobile
+- IoT
+
+Processamento de Dados
+- Tempo real
+- MapReduce
+- Batch
+- Interferência Machine Learning
+
+Chatbots
+- Potencializando a lógica do chatbot
+
+Amazon Alexa
+- Ativando aplicativos habilitados para voz;
+- Kits de habilidades da Alexa
+
+Automação IT
+
+- Mecanismo de política;
+- Extensão dos serviços da AWS
+- Gerenciamento da infraestrutura
+
+Amazon Elastic Container Service (Amazon ECS)
+
+Orquestra a execução de containers
+
+Mantém e escala um conjunto de nós executados nos seus containeres
+
+Remove a complexidade de manter a infraestrutura
+
+
+Amazon ECS
+
+Agendamento e Orquestração > Gerenciador de Cluster
+			   > Mecanismo de Alocação
+			   
+
+Teste de Conhecimento
+
+Qual das opções abaixo não é uma funcionalidade do Amazon EC2?
+A. Ampla variedade de tipos de instâncias para diferentes cargas de
+trabalho
+B. Serviço totalmente gerenciado de computação - CORRETO
+C. Várias opções de preços e faturamento por Segundo
+D. Controle total sobre as instâncias e opções de acesso remoto
+E. Modelos reutilizáveis para criar instâncias adicionais (AMIs)			   
+
+
+
+
+--------
+
+Armazenamento
+
+Amazon S3:
+
+Armazenamento a nível de objeto, Object Data Store e Trigger de Eventos(desencadear ação).
+
+
+
+
+Casos de Uso
+------------------
+
+- Projetado para 99.999999999% de durabilidade
+- Backup e arquivamento
+- Armazenamento e distribuição de conteúdo
+- Análise Big data
+- Recuperação de Desastre
+- Trigger de Eventos
+- Hospedagem de sites estáticos
+
+Amazon S3
+
+- Desenvolver para armazenar e recuperar dados
+- Rápido, durável, acesso altamente disponível aos objetos
+- Pode armazenar um número ilimitado de objetos em um bucket
+- Armazenar e recuperar dados a qualquer momento, de qualquer lugar na web
+- Conteúdo é privado for default
+
+
+CLIENTE > Cliente envia solicitação para S3 > 
+		< Objeto Retornado		< Amazon S3 Bucket
+
+
+Escolhendo uma Região
+
+Residência de dados, Conformidade e Regulamentação
+
+- Existem leis locais de privacidade dos dados?
+- Os dados do cliente podem ser armazenados fora do país?
+
+Proximidade dos usuários aos dados
+
+- Pequenas diferenças na latência podem interferir na experiência do cliente
+- Escolha uma Região que seja próxima dos seus usuários
+
+
+
+Eficiência de Custo
+
+- Os custos variam por Região 
+- Avalie o custo-benefício da replicação de dados para outra região
+
+
+
+Amazon S3 Glacier
+
+
+Armazenamento para arquivamentos de dados de longa duração
+
+Arquivamento & Backup
+
+Armazenamento de baixo custo
+
+Casos de Uso
+- Recursos de Mídia nos fluxos de trabalho
+- Arquivamento de informações de saúde
+- Arquivamento de Regulamentaçãor e Compliance
+- Armazenamento dos Dados Científicos
+- Preservação Digital
+- Substituição de fita magnética
+
+Amazon Elastic Block Store (Amazon EBS) - Armazenamento em Bloco
+
+Armazenamento persistente a nível de bloco para instâncias
+Protegido por replicação
+Diferentes tipos de volume
+Aumenta ou diminua em minutos
+Pague somente pelo o que for provisionado
+Funcionalidade de Snapshots
+Encriptação disponível
+
+
+Teste de Conhecimento
+Qual dos seguintes serviços oferece armazenamento baseado em objetos?
+A. Amazon Elastic Block Store (Amazon EBS)
+B. AWS Storage Gateway
+C. Amazon Elastic File System (Amazon EFS)
+D. Amazon S3 CORRETO
+E. Amazon Machine Images (AMIs)
+
+
+Banco de Dados
+
+Bancos de Dados com Propósito Específico
+
+RELACIONAIS
+
+AMAZON RDS
+AMAZON AURORA
+AMAZON REDSHIFT
+
+
+CHAVE - VALOR
+
+AMAZON DYNAMODB
+
+NÃO RELACIONAL DOCUMENTAL
+
+AMAZON DOCUMENTDB
+
+NÃO RELACIONAIS NA MEMÓRIA
+
+AMAZON ELASTICACHE
+
+NÃO RELACIONAIS GRÁFICOS
+AMAZON NEPTUNE
+
+
+NÃO RELACIONAL LEDGER
+AMAZON QLDB
+
+
+Faça Você Mesmo vs. Serviços de Banco de Dados da AWS
+
+Banco de Dados no Amazon EC2
+
+- Acesso ao Sistema Operacional
+- Precisa de recursos de aplicação específicos
+
+Serviços de Banco de Dados da AWS
+
+- Fácil de configurar, gerenciar e manter
+- Alta disponibilidade com um click
+- Foco na performance
+- Infraestrutura gerenciada
+
+Opções de Bancos de Dados da AWS
+
+Bancos de dados transacionais
+
+SQL - AMAZON RDS
+NO-SQL - AMAZON DYNAMODB
+
+
+Análise de dados ou relacionamentos
+SQL- AMAZON REDSHIFT
+NOSQL- AMAZON NEPTUNE
+
+Armazenamento de dados em memória e cache
+
+NoSQL - Amazon ElastiCache
+
+Amazon RDS
+
+Configure, opere e escale um banco de dados relacional na nuvem com apenas alguns cliques.
+
+Fácil de configurar e operar > Amazon RDS > ESCALABILIDADE
+
+AMAZON AURORA > Mecanismos de Bancos de Dados
+			Microsoft SQL Server > Maria DB > Oracle > PostgreSQL > MySQL
+
+
+Amazon Aurora
+Banco de Dados relacional compatível com MySQL e PostgreSQL desenvolvido para a nuvem.
+
+Alta disponibilidade e durabilidade
+Alta perfomance
+Alta escalabilidade
+Compatível
+Multi-Região
+
+Amazon DynamoDB
+Serviço de Banco de Dados NoSQL rápido e flexível para qualquer escala.
+
+Totalmente gerenciado
+Rápido, perfomance consistente
+Controle de acesso granular
+Flexível.
+
+Casos de Uso do Amazon DynamoDB
+
+Tabela de Classificação e pontuação > Jogadores > Servidores do jogo >
+Tabela de Classificação
+
+
+Funciona bem para aplicações que
+
+Necessitam de extrema capacidade de escalabilidade horizontal
+Tenham dados simples e de grande volume
+Precisa escalar com rapidez e facilidade
+Não precisa de relações complexas
+
+
+Teste de Conhecimento
+Qual dos seguintes serviços pode ser usado para implementar cargas de trabalho NoSQL?
+A. Amazon Aurora
+B. Amazon RDS
+C. Amazon DynamoDB - CORRETO
+D. Amazon Redshift
+
+Redes
+
+
+Amazon Virtual Private Cloud (Amazon VPC)
+
+Amazon VPC
+
+Seu espaço de rede privada na nuvem AWS
+Fornece isolamento lógico para os suas cargas de trabalho
+Permite controles de acesso personalizados e configurações de segurança para os seus
+recursos
+
+Defesa de rede em camadas para VPCs
+
+VPC
+
+1: Tabela de Rotas da VPC
+2: Subrede ACLs: Entrada/Saída OS
+3: EC2/ Grupos de Segurança para Interface Elástica de Rede: Entrada/Saída
+4: Proteção baseada em host de terceiros
+
+
+Segurança em todas as camadas
+"Defesa em Profundidade"
+
+Usando subredes para dividir sua VPC
+
+Uma subrede é um segmento ou divisão do intervalo de endereços IP de uma VPC onde você pode isolar
+um grupo de recursos.
+Subredes definem acessibilidade à Internet
+
+
+Subredes Privadas
+Não possui rota na Tabela de Rotas para o Internet Gateway
+Não é diretamente acessível pela Internet
+
+Estruture sua infraestrutura
+
+Listas de controle de acesso à rede(ACLs)
+Permite/Nega o tráfego para entrada e saída das subredes
+Fortalece a segurança como um nível secundário de defesa a nível de subrede
+
+
+Grupos de Segurança
+
+Usado para permitir o tráfego de / para a nível da interface de rede
+(instância)
+Normalmente administrado pelos desenvolvedores de aplicação
+
+Elastic Load Balancing (ELB)
+
+Um serviço de balanceamento de carga gerenciado que distribui o tráfego de entrada da aplicação entre diversas instâncias da Amazon EC2, contêineres e endereços IP.
+
+
+Alta Disponibilidade           >			   > APP
+Verificações de Integridade    > Tráfego de Usuários > ELB > APP
+Recursos de Segurança          >                           > APP
+
+Amazon Route 53
+
+O Amazon Route 53 é um web service Domain Name System (DNS) na nuvem altamente
+disponível e escalável.
+
+- DNS traduz nomes de domínio em endereços IP.
+- Capacidade de comprar e gerenciar nomes de domínio e definir automaticamente as
+configurações de DNS.
+- Fornece ferramentas paraarquiteturas flexíveis, de alto desempenho e altamente
+disponíveis na AWS.
+- Diversas opções de roteamento.
+
+Colocando tudo junto
+
+Amazon Route 53  > Clientes > Internet Gateway > Nuvem AWS
+
+
+Teste de Conhecimento
+Quais das opções a seguir são camadas de segurança de rede para VPCs? (escolha três)
+A. Amazon Machine Images (AMIs)
+B. Listas de controle de acesso à rede - ACLs (nível de subrede) - CORRETO
+C. Grupos de Segurança (nível instância) - CORRETO
+D. Políticas de vida útil S3
+E. Tabelas de rotas da VPC - CORRETO
+
+Segurança
+
+
+Segurança é a nossa prioridade máxima
+
+
+Projetado para Segurança
+
+Monitoramento Constante
+
+Altamente Automatizado
+
+Altamente Disponível
+
+Altamente Credenciado
+
+Modelo de Responsabilidade Compartilhada
+
+
+Responsabilidade do Cliente
+
+	DADOS DO CLIENTE
+	Plataforma, aplicações, gerenciamento da identidade e acesso
+	Configuração do Sistema Operacional, Rede, e Firewall
+	
+	Encriptação dos dados do lado do cliente e autenticação de integridade
+	dos dados
+	Encriptação do lado do servidor (sistema de arquivos e/ou dados)
+	Proteção do tráfego da rede (encriptação, integridade, identidade)
+	
+
+Responsabilidade da AWS
+
+	Serviços Básicos da AWS
+	Computação, Armazenamento, Banco de Dados, Rede
+	
+	Infraestrutura global da AWS
+	Regiões, Zonas de Disponibilidade e Pontos de Presença
+
+AWS Identity and Access Management (IAM)
+
+Controle com segurança o acesso aos seus recursos da AWS
+-  Atribua permissões detalhadas aos usuários, grupos e roles
+- Compartilhe acesso temporário à sua conta AWS
+-Associe os usuários na sua rede corporativa ou em um provedor de identidade na Internet
+
+Componentes IAM
+
+
+Criar
+Usuários
+Uma pessoa ou aplicação que interage com a AWS
+
+Grupos
+Conjunto de usuários com permissões idênticas
+
+Roles
+Privilégios temporários que uma entidade pode assumir
+
+
+> IAM >
+
+
+Define permissões para controlar quais recursos da AWS os usuários podem acessar.
+Ajuda você a encontrar os padrões para o controle de identidade e de acesso
+- Autenticação
+- Autorização
+
+Usuários IAM
+
+Os usuários IAM não são contas separadas da AWS; são usuários dentro da sua conta
+
+Cada usuário tem as suas próprias credenciais
+
+Os usuários IAM estão autorizados a realizar ações específicas da AWS baseado nas suas permissões
+
+Controle do Acesso ao Amazon S3: Geral
+
+Alguns serviços oferecem suporte para as políticas baseadas nos recursos, como as políticas de um Bucket S3.
+
+AWS CloudTrail
+
+Rastreie a atividade do usuário e o uso de API na sua conta da AWS
+Monitore continuamente as atividades do usuário e registre as chamadas de API
+
+
+O que é o AWS Trusted Advisor?
+
+Um serviço que fornece orientação para ajudá-lo a reduzir custos, aumentar o desempenho e melhorar a segurança
+
+Quais das opções a seguir são componentes do IAM?
+A. Grupo – conjunto de usuários com permissões idênticas. CORRETO
+B. Bucket – container para objetos armazenados
+C. Usuário – pessoa ou aplicação que interage com a AWS. CORRETO
+D. Instância – cópia de um AMI rodando como um servidor virtual
+E. Política – declaração formal de uma ou mais permissões. CORRETO
+
+Inovação com a AWS
+
+
+Internet das Coisas (IoT)
+
+
+IoT é um sistema de dispositivos integrados, como eletrodomésticos, relógios ou recursos em um
+carro, que podem ser conectar a várias aplicações.
+
+Essas conexões permitem que os dados sejam transferidos de e para dispositivos em um fluxo de
+comunicação bidirecional em uma rede.
+
+Os desafios para gerenciar "coisas"
+A tarefa de gerenciar dipositivos IoT possui inúmeros desafios
+
+Gerenciamento e atualizações
+- Conectividade na rede inconsistente ou intermitente
+- Os dispositivos são remotos e podem não estar fisicamente acessíveis
+-  Uma grande frota de dispositivos em produção
+
+Análises
+- Baixa capacidade de processamento, pouca especificação nos recursos do dispositivo
+- Os dispositivos podem emitir grandes quantidades de dados de streaming
+
+Serviços de IoT na AWS
+
+AWS IoT SiteWise
+AWS IoT Analytics
+Serviços de
+Análise
+AWS IoT Events
+AWS IoT Things
+
+AWS IoT Core
+AWS IoT Device Management
+AWS IoT Device Defender
+
+FreeRTOS
+AWS IoT Device SDK
+AWS IoT Greengrass
+AWS IoT Device Tester
+
+O que os clientes estão fazendo com IoT da AWS
+
+Melhorando o desempenho e a produtividade dos processos industriais
+Monitorando remotamente as aplicações de saúde e bem-estar dos pacientes
+Rastreando os níveis de estoque e gerenciando as operações do depósito
+Criando produtos e experiências de usuário mais inteligentes em residências, edifícios e cidades
+Cultivando safras mais saudáveis com maior eficiência
+Gerenciando os recursos de energia com mais eficiência
+Transformando o transporte com veículos conectados e autônomos
+Aumentando a segurança em casa, no escritório e na indústria
+
+
+AWS IoT Core : Rápido desenvolvimento
+
+AWS IoT Core
+Conecta os dispositivos na nuvem
+
+AWS Lambda
+Execute o código em resposta a eventos
+
+Amazon DynamoDB
+Armazenamento de dados NoSQL previsível e escalável
+
+
+Amazon Kinesis
+Análise de Streaming
+
+Amazon API Gateway
+Desenvolver, implementar e gerenciar APIs
+
+Amazon Redshift
+Armazenamento de dados em escala petabyte
+
+Amazon SNS
+Notificações e push móveis
+
+Amazon Cognito
+Identidade do usuário e sincronização dos dados
+
+AWS IoT Greengrass
+
+CLOUD - GREENGRASS CORE > DEVICE
+
+CASE BAYER CROPSCIENCE
+
+Problema
+No ramo das sementes, é importante obter uma melhor visibilidade e mais rápida do que hoje acontece nos campos durante o plantio e a colheita nas organizações de pesquisa de melhoramento e da cadeia de abastecimento.
+
+Solução
+O AWS IoT ajuda a Bayer Crop Science a gerenciar a coleta, processamento e análise de dados de cultivo
+das sementes. Os analistas de dados usam a nova plataforma de coleta de dados para acessar esses
+dados nos seus dispositivos móveis por meio de painéis. A solução captura vários terabytes de dados
+de transporte de sementes, plantio e crescimento nos campos de pesquisa da empresa em todo o mundo.
+
+Impacto
+Usando o AWS IoT, a Bayer Crop Science pode fornecer dados de sementes para analistas em apenas alguns minutos, em vez de alguns dias. Isso também ajuda os agricultores a obter melhor visibilidade das condições do campo e fornece uma estrutura confiável de processamento e análise de ponta.
+
+
+Machine learning
+
+O que é Machine Learning?
+
+Inteligência Artificial (AI)
+Qualquer técnica que permita aos computadores imitar a inteligência humana usando lógica, declarações "se-então" e aprendizado de máquina (incluindo aprendizado profundo)
+
+Machine learning (ML)
+Subgrupo de IA que utiliza máquinas para pesquisar padrões nos dados para construir modelos lógicos automaticamente
+
+Deep Learning
+Subrupo de ML formado por várias camadas de redes neurais que realizam tarefas como reconhecimento de voz e imagem.
+
+Inovação de Machine Learning da Amazon
+
+Recomendações para Você
+
+4.000 produtos vendidos por minuto na Amazon.com
+
+1.6 milhões de embalagens todos os dias
+
+Todas as semanas bilhões de interações da Alexa
+
+Primeira entrega realizada pelo Prime Air em 7 Dez, 2016
+
+
+
+AWS IA e os serviços do Machine Learning
+
+CONJUNTO DE RECURSOS MAIS AMPLO E PROFUNDO
+
+
+Serviços AI
+
+
+Serviços ML
+
+
+Estrutura ML + infraestrutura
+
+
+Visão geral do Amazon SageMaker
+
+
+Preparar > Construir > Treinar e Ajustar > Implementar e Gerenciar
+
+
+CASE NFL
+
+PROBLEMA
+3 + terabytes de dados, mais de 1.500 horas de jogo por semana. Precisava de uma solução para as estatísticas em tempo real.
+Equipe enxuta, sem experiência em ciência de dados
+
+SOLUÇÃO: NEXT GEN STATS
+Comprometido com o Amazon ML Solutions Lab.
+Dados ao vivo transmitidos para AWS a partir das tags RFID nos jogadores e na bola da partida.
+Dados processados em mais de 100 etapas em menos de 1 segundo.
+Modelos de ML elaborados no Amazon SageMaker fazem previsões em tempo real.
+
+IMPACTO
+Lançou + 20 estatísticas rapidamente com dados limitados da equipe de dados
+Patrocinadores de esportes obtêm dados interessantes para engajar os torcedores
+
+
+
+Amazon Rekognition
+Detecção de objeto e cenário
+Os aplicativos de compartilhamento de fotos podem potencializar pesquisas inteligentes e encontrar
+rapidamente eventos ou imagens, como casamentos, caminhadas ou pôr do sol
+
+Análise Facial
+As empresas de varejo podem compreender os dados demográficos e o sentimento dos clientes na loja
+
+Comparação do Rosto
+Hotéis e empresas de hotelaria podem fornecer um serviço personalizado para os hóspedes
+
+Reconhecimento Facial
+Fornece autenticação secundária para aplicativos existentes
+
+Detecção do objeto e cenário
+
+Identifica objetos e cenários, e fornece resultados de confiança
+Use a detecção de objeto e cenário para adicionar recursos que pesquisam, filtram e organizam grandes
+bibliotecas de imagens
+
+
+Análise Facial
+
+Analise as características faciais em diversas dimensões
+
+
+Blockchain
+
+O que é blockchain?
+Blockchain torna possível construir aplicação onde várias partes podem executar transações sem a necessidade de uma autoridade central de confiança.
+Hoje, elaborar uma rede blockchain escalável com as tecnologias existentes é complexo de configurar e difícil de gerenciar
+
+Exemplo dos casos de uso
+
+Envio
+Gestão da cadeia de abastecimento
+Financeiro e bancário
+Publicidade Digital
+
+
+
+Beneficios da Blockchain
+
+
+Descentralizada
+
+Instituições Financeiras
+Pagamentos peer-to-peer
+
+Credores Hipotecários
+Processo por empréstimos consorciados
+
+Cadeia de Suprimento
+Transacionar com fornecedores e distribuidores
+
+Varejo
+Facilite as recompensas do cliente
+
+Benefícios
+
+Transparência
+Imutabilidade
+Auditabilidade
+Sem Permissões
+Permissionados
+Consórcio
+
+
+
+Serviços de Blockchain da AWS
+
+Amazon Managed Blockchain
+
+Serviço totalmente gerenciado que facilita a criação e o gerenciamento de redes blockchain
+escalonáveis usando estruturas usuais de código aberto
+
+Hyperledger Fabric
+Ethereum
+
+Caracterísitacas Amazon Managed Blockchain
+
+Totalmente Gerenciável
+Criar rede blockchain em minutos
+
+Variedade de Código Aberto
+Suporta dois frameworks
+
+Decentralizado
+Gerenciar democraticamente a rede
+
+Confiável e escalável
+Apoiado com tecnologia Amazon
+
+Baixo Custo Integrado
+QLDB Pague somente pelos recursos que for usar
+
+Integrado
+De fácil uso com os serviços AWS
+
+
+CASE NESTLÉ
+
+A cadeia de origem do café da Nestlé cultiva a transparência da cadeia de suprimentos com Amazon Managed Blockchain
+
+DESAFIO 
+A Nestlé é a maior compradora de café do mundo e busca transparência na sua cadeia de suprimentos de grãos de café sem ser através dos seus mediadores e compradores.
+
+SOLUÇÃO
+A Nestlé recorreu à Amazon Managed Blockchain para rastrear cada etapa da sua cadeia de suprimentos – desde o agricultor e avaliador ao torrefador e embalador.
+
+BENEFÍCIOS
+
+A Nestlé agora pode desenvolver relacionamentos individuais com produtores de café e com as instalações de
+torrefação.
+
+Como o registro do blockchain seguro é público, ele fornece maior responsabilidade a todos na cadeia de
+abastecimento.
+
+
+"Seja para asseguramos o frescor, seja certificando-se de que a embalagem usada é melhor para o planeta, isso significa que o valor está voltando para os fazendeiros e os parceiros com quem trabalhamos."
+Armin Nehzat, Digital Technology Manager, Nestlé
+
+
+AWS Ground Station
+
+
+Casos de uso comuns no processamento de dados de satélite na nuvem.
+
+
+Previsão do tempo e agricultura
+
+Os produtores comerciais de frutas podem monitorar a saúde da colheita e os níveis de água para garantir o uso eficiente de recursos limitados
+
+Remessa global e anti-pirataria
+Aproveite os registros de localização, destino e rastreamento do navio para confirmar a precisão
+do posicionamento do navio, bem como ser notificado de quaisquer desvios das operações normais
+
+Observação da Terra e segurança contra incêndio
+Use o acesso de baixa latência a imagens de alta resolução do mapa de calor da terra para informar os comandantes de fogo da linha de frente sobre os pontos de entrada de calor mais baixo e seguro para
+combater incêndios
+
+Previsão para o Varejo
+4,8 milhões de imagens de satélite de 44 grandes redes varejistas dos EUA asseguram o número de
+carros estacionados e traz uma vantagem informativa para a precisão das previsões
+
+
+Desafios da Indústria
+
+Crie, alugue ou compre capacidade de banda não utilizada
+São difícies de manter
+Requer alto investimento para escalar
+Suporta precificação opaca
+Causa latência no acesso aos dados
+
+
+AWS Ground Station: O que é?
+
+AWS Ground Station é um serviço totalmente gerenciado que permite controlar as comunicações, processar os dados e escalar as operações de satélites, sem se preocupar com a criação ou o gerenciamento de sua própria infraestrutura de estações terrestres
+
+Essas instalações fornecem comunicações entre o solo e os satélites no espaço
+- Rede de fibra global de baixa latência
+- Acesso direto aos serviços da AWS
+- Serviço totalmente gerenciado (sem compromissos com a infraestrutura)
+- Pagamento conforme o uso
+- Sem requisitos de licenciamento
+- Escale as comunicações por satélite sob demanda quando sua empresa precisar
+
+O que a AWS Ground Station oferece
+
+- Suporte de satélite terrestre sem compromissos de infraestrutura
+- Definição de preço de pagamento por minuto
+- Agendamento para o auto-atendimento
+- Rede de estação terrestre global totalmente gerenciada integrada com a Infraestrutura global da AWS
+- Backhaul dos dados da banda base para a região de escolha do cliente incluída no preço
+- Entrega de dados quase em tempo real
+
+AWS Wavelength
+
+Computação Móvel de Ponta: Características
+
+
+- Um grande número de dispositivos como sensores, cameras de vídeo, e dispositivos IoT geram um grande
+volume de dados;
+- O processamento de dados deve ocorrer próximo à geração de dados
+- Em tempo real com uma latência baixa
+
+Espera-se que o tráfego móvel global total alcance 131 EB (exabytes) por mês até 2024.
+
+
+5G e computação de ponta móvel
+
+MODELO DE ENTREGA DE SERVIÇOS MÓVEIS COM FOCO NO CONSUMIDOR E NO S NEGÓCIOS
+
+AWS Wavelength
+
+O Wavelength combina a alta largura de banda e a latência ultrabaixa das redes 5G com os serviços de computação e armazenamento da AWS, para permitir que os desenvolvedores inovem e criem uma classe nova de aplicações
+Infraestrutura e serviços da AWS em redes 5G de Provedores de Serviços (CSP)
+Latência ultrabaixa, processamento de dados localmente
+Capacidade escalável em datacenter local dos Provedores de Serviços (CSP) gerenciados e mantidos pela AWS
+
+AWS Wavelength: Desenvolvido para tecnologia móvel
+
+SERVIÇOS AWS DE DENTRO DA REDE CSP MOBILE
+
+- Infraestrutura de computação e armazenamento AWS incorporada na rede móvel CSP
+- Painel único de gerenciamento através das Wavelength Zones e Regiões AWS
+- Acesso aos serviços nas regiões da AWS
+- Desenvolva aplicações uma vez e implemente para uso com rede 5G globalmente
+- Failover da Wavelength Zone para a região AWS
+
+Casos de Uso AWS Wavelength
+
+Saúde
+
+Solução AI/ML para o processamento e análise de vídeo, imagens e dados para
+diagnóstico em tempo real.
+
+Veículos Conectados (C-V2X)
+Monitoramento em tempo real de dados de sensores de segurança no trânsito,
+conectividade segura, telemetria no carro e direção autônoma
+
+Fábrica Inteligente
+
+Acelerando a vantagem industrial com AI / ML, reconhecimento de vídeo para manufatura definida por
+software
+
+LG usa o AWS Wavelength para baixa latência, para a entrega de alta vazão dos dados V2X
+
+5G nos dá essa peça de conectividade com grande banda larga e baixa latência, enquanto o Wavelenght está fornecendo a potência de processamento necessária na borda para complementar a tecnologia 5G. Portanto, trata-se de reunir segurança, privacidade, conectividade e computação para o benefício dos consumidores e sua segurança.
+Harsh Kupwade Patil, Security Leader & Principal Research Engineer, LG Electronics
+
+
+Próximos Passos
+
+Começar a Criar
+Continuar aprendendo
+Obter certificação
+
+
+Começar a Criar: Dicas para começar
+
+AWS Free Tier
+Ganhe experiência prática e gratuita com produtos e serviços da AWS
+aws.amazon.com/free
+
+Alarmes de Faturamento
+Receba alertas de faturamento que ajudam a monitorar as cobranças na
+sua conta AWS
+No Console de Faturamento
+
+Ferramentas de desenvolvedor
+AWS,ferramentas de linha de comando,Kits de ferramentas IDE e IDE,SDKs, SDKs para dispositivos móveis e IoT
+aws.amazon.com/ developer
+
+Quick Starts
+Implementações automatizadas com padrão de excelência na nuvem AWS
+aws.amazon.com/ quickstart
+
+Continuar Aprendendo
+Aprenda no seu próprio ritmo
+Amplie seus conhecimentos na nuvem AWS com nosso curso digital
+individualizado, AWS Cloud Practitioner Essentials
+
+Aprenda com os especialistas da AWS
+Desenvolva suas habilidades na nuvem AWS com nosso curso presencial, AWS Technical Essentials
+
+Guias de Capacitação
+
+Nossos guias de capacitação em Cloud Practitioner oferece uma variedade de recursos para ajudar a desenvolver seu conhecimento na nuvem da AWS e se preparar para a certificação AWS Certified Cloud
+Practitioner
+
+Continuar aprendendo: Guias de Capacitação da AWS
+
+Seus guias para aprender a nuvem da AWS Você pode baixar os guias de capacitação da AWS onde você encontra uma variedade de recursos que irão lhe ajudar a desenvolver suas habilidades e conhecimeno na nuvem da AWS
+Cada guia apresenta treinamento digital cuidadosamente selecionado, cursos presenciais, vídeos, whitepapers, certificações e muito mais
+Explore os guias por função e área de solução
+
+
+Guias de Capacitação AWS : Destaque
+
+Cloud Practitioner Para profissionais de negócios e técnicos
+
+Valide seu expertise com uma Certificação da AWS
+
+Por que ter uma certificação?
+- Comprovar sua expertise
+- Ganhar reconhecimento e visibilidade
+- Promova a credibilidade com seu empregador e colegas
+
+Recursos da Certificação
+- Treinamento preparatório para as provas
+- Laboratórios Individualizados
+
+
+
